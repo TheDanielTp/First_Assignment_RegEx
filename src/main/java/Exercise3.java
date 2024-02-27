@@ -30,7 +30,7 @@ public class Exercise3 {
     */
 
     public static boolean validateEmail(String email) {
-        //regex defined such that it starts from the beginning of the string and search for any allowed character, then for zero or more of any allowed characters
+        //regex defined such that it starts from the beginning of the string and search for any allowed character then for zero or more of any allowed characters
         //then for an @ sign, and then again for one or more of any allowed characters. then for one or more "dot", and then for any english letter
         String regex = "^[a-zA-Z0-9_+.&*-]+(?:\\.[a-zA-Z0-9_+.&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
 
