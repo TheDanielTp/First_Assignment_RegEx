@@ -19,7 +19,7 @@ class Test4 {
         String input = "appleapple orange pearpear pineapple";
         List<String> expectedOutput = Arrays.asList("appleapple", "pearpear");
 
-        List<String> actualOutput = handle.findReapetdWords(input);
+        List<String> actualOutput = handle.findRepeatedWords(input);
 
         assertEquals(expectedOutput, actualOutput);
     }
@@ -29,7 +29,7 @@ class Test4 {
         String input = "apple orange pear pineapple";
         List<String> expectedOutput = Arrays.asList();
 
-        List<String> actualOutput = handle.findReapetdWords(input);
+        List<String> actualOutput = handle.findRepeatedWords(input);
 
         assertEquals(expectedOutput, actualOutput);
     }
@@ -39,7 +39,7 @@ class Test4 {
         String input = "haha you are so funny";
         List<String> expectedOutput = List.of("haha");
 
-        List<String> actualOutput = handle.findReapetdWords(input);
+        List<String> actualOutput = handle.findRepeatedWords(input);
 
         assertEquals(expectedOutput, actualOutput);
     }
@@ -49,7 +49,7 @@ class Test4 {
         String input = "";
         List<String> expectedOutput = Arrays.asList();
 
-        List<String> actualOutput = handle.findReapetdWords(input);
+        List<String> actualOutput = handle.findRepeatedWords(input);
 
         assertEquals(expectedOutput, actualOutput);
     }
